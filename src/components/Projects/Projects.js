@@ -13,10 +13,19 @@ const Projects = () => (
         <BlogCard key={id}>
           <Img src={image} />
           <TitleContent>
-          <HeaderThree title>{title}</HeaderThree>
+            <HeaderThree title>{title}</HeaderThree>
+            <Hr />
           </TitleContent>
-          <Hr />
-          <CardInfo>{description}</CardInfo>
+         
+        <CardInfo>{description}</CardInfo>
+        <div>
+          <TitleContent>Stack</TitleContent>
+          <TagList>
+            {tags.map((tag, i) => (
+            <Tag Key={i}>{tag}</Tag>
+            ))}
+          </TagList>
+        </div>
         </BlogCard>
       ))}
     </GridContainer>
