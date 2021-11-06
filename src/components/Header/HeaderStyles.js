@@ -3,11 +3,16 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
+  background: #A8DADC;
+  font-size: 6rem;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  padding: 2rem;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 2rem;
+  width: 100%;
+  
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -18,12 +23,13 @@ export const Container = styled.div`
   }
 `;
 export const Span = styled.span`
-  font-size: 2rem;
+  font-size: 5rem;
 `;
 
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
+  font-size: 5rem;
   flex-direction: row;
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -33,6 +39,7 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
+  font-size: 5rem;
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
@@ -51,7 +58,7 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
-  font-size: 2rem;
+  font-size: 5rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
