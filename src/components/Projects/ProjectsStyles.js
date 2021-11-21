@@ -5,7 +5,106 @@ export const Img = styled.img`
   height:100%;
   object-fit: cover;
   overflow: hidden;
-`
+`;
+// autry inspired
+
+// container wrapper
+export const Container_wrapper = styled.div`
+width: 90%;
+margin: 0 auto;
+max-width: 1100px;
+`;
+export const Container_flex = styled.div`
+  display: -webkit-box;
+  /* display: -ms-flexbox; */
+  display: flex;
+  z-index: 100;
+  position: relative;
+  -webkit-box-pack: justify;
+  /* -ms-flex-pack: justify; */
+  justify-content: space-between
+
+`;
+
+export const Container_Text = styled.div`
+  position: relative;
+`;
+// contents for container text.
+export const Container_H3 = styled.h3`
+  display: block;
+  /* font-size: 1.17em; */
+  font-size: 400px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* font-weight: bold; */
+  font-weight: 900;
+  margin: 0;
+`;
+export const Container_P = styled.p`
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 20px;
+  max-width: 540px;
+  line-height: 1.75;
+  font-size: 20px;
+  color: #888888;
+  margin: 0;
+  letter-spacing: .01em;
+  box-sizing: border-box;
+  font-weight: 300;
+`;
+export const Tagscontainer = styled.div`
+  padding-top: 20px;
+  -webkit-box-orient: horizontal!important;
+  -webkit-box-direction: normal!important;
+  -webkit-box-pack: start!important;
+  -ms-flex-pack: start!important;
+  justify-content: flex-start!important;
+  /* -ms-flex-direction: row!important; */
+  flex-direction: row!important;
+  -webkit-box-pack: start!important;
+  -ms-flex-pack: start!important;
+  justify-content: flex-start!important;
+`;
+
+export const Tag_text = styled.h5`
+display: block;
+/* font-size: 0.83em; */
+margin-block-start: 1.67em;
+margin-block-end: 1.67em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+/* font-weight: bold; */
+width: -webkit-fit-content;
+width: -moz-fit-content;
+width: fit-content;
+padding: 5px 10px;
+border-radius: 28px;
+margin-right: 10px;
+/* u */
+letter-spacing: .01em;
+font-weight: 300;
+font-size: 14px;
+background-color: #f7f7f7;
+margin: 0;
+-webkit-box-direction: normal!important;
+`;
+
+export const ContainerImg_Link = styled.a`
+
+`;
+export const ContainerImg = styled.img`
+
+`;
+
+export const ContainerText = styled.a`
+
+`;
 
 export const GridContainer = styled.section`
 display: grid;
@@ -21,7 +120,8 @@ row-gap: 3rem;
   padding-bottom: 0;
 }
 
-`
+`;
+
 export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
@@ -75,7 +175,7 @@ export const CardInfo = styled.p`
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding:.3rem
-  
+
 }
 `;
 
@@ -105,8 +205,8 @@ export const TagList = styled.ul`
 display: flex;
 justify-content: space-around;
 padding: 2rem;
-`
+`;
 export const Tag = styled.li`
 color: #d8bfbf;
 font-size: 1.5rem;
-`
+`;
