@@ -1,8 +1,20 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
-
 // Kai inspired
+export const Header_scroll = styled.header`
+ transform: translate3d(0, -100%, 0);
+`;
+
+export const Header = styled.header`
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: transform 0.3s ease-in;
+`;
 export const Header_Wrapper = styled.div`
 height: 99px;
 position: fixed;

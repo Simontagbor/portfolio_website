@@ -6,7 +6,8 @@ import { DiCss3Full, DiCssdeck } from 'react-icons/di';
 import { Container, Div1, Div2, Div3, Header_unfixed, Header_Wrapper, Navbar, Navbar_bg_color, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () => (
-  <Header_Wrapper>
+  <Header>
+   <Header_Wrapper>
     <Header_unfixed>
       <Navbar>
         <Div1>
@@ -50,8 +51,9 @@ const Header = () => (
 
         </Navbar_bg_color>
       </Navbar>
-    </Header_unfixed>
-  </Header_Wrapper>
+     </Header_unfixed>
+    </Header_Wrapper>
+  </Header>
 );
 
 export default Header;
