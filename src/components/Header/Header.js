@@ -3,20 +3,19 @@ import React from 'react';
 import { AiFillGithub, AiFillDribbbleCircle, AiFillLinkedin, AiFillBehanceCircle } from 'react-icons/ai';
 import { DiCss3Full, DiCssdeck } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, Header_unfixed, Header_Wrapper, Navbar, Navbar_bg_color, NavLink, SocialIcons, Span } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, Header_unfixed, Header_Wrapper, Logo_container, Logo_wrapper, Navbar, Navbar_bg_color, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () => (
-  <Header>
    <Header_Wrapper>
     <Header_unfixed>
       <Navbar>
-        <Div1>
+        <Logo_container>
           <Link href="/">
-            <a style={{ display: "flex", alignItems:"center", color:"black", marginBottom:"20;", width:"25%;"}}>
-              <DiCssdeck size="2.5rem"/><Span>Portfolio</Span>
-            </a>
+            <Logo_wrapper>
+            <DiCssdeck size="2.5rem"/><Span> Simon</Span>
+            </Logo_wrapper>
           </Link>
-        </Div1>
+        </Logo_container>
         <Div2>
           <li>
             <Link href="#Works">
@@ -53,7 +52,6 @@ const Header = () => (
       </Navbar>
      </Header_unfixed>
     </Header_Wrapper>
-  </Header>
 );
 
 export default Header;
