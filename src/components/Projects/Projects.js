@@ -64,7 +64,6 @@ const Projects = () => (
 
           ))}
   </Container_wrapper>
-
 );
 
 export default Projects;
