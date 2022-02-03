@@ -1,0 +1,173 @@
+const styles = StyleSheet.create({
+  Mockup_flex1: {
+      };
+  TextBox: {
+    
+     
+      };
+  Txt246-flxH1: {
+    
+  };
+  Txt644-paragraph: {
+    
+  };
+
+  Img_container: { 
+  };
+})
+
+Medium screens
+
+const styles = StyleSheet.create({
+  Mock_up_content: {
+     };
+  TextBox: {
+   
+  };
+
+})
+Small screens
+const styles = StyleSheet.create({
+  TextBox: {
+       
+      };
+  TextBox: {
+   
+  };
+
+ })
+
+
+
+Three Mock ups
+Large screen
+const styles = StyleSheet.create({
+  Mockups3l: {
+    
+    768
+    
+     480
+    
+
+  };
+  UnsplashQxu1re1uahu: {
+    
+    768
+    
+
+    480 
+    
+
+       
+  };
+
+
+Project details
+Large screens
+
+const styles = StyleSheet.create({
+  Project_dets: {
+    
+
+   768
+  
+
+  };
+  Project_dets_item: {
+    
+    760
+    
+    
+
+  };
+  Txt619-H1: {
+    
+    fontFamily: Work Sans; sans-serif;
+    
+    color: rgba(0;0;0;1);
+    
+    justify-content: center;
+    
+    
+  };
+  Txt-body: {
+    
+    fontFamily: Open Sans; sans-serif;
+    ;
+    letter-spacing: 0.3;
+    color: rgba(0;0;0;1);
+    text-align: center;
+    justify-content: center;
+    
+    
+  };
+
+Medium to small
+const styles = StyleSheet.create({
+  Project_dets: {
+      };
+  Project_dets_item: {
+    
+  };
+  project_dets_H1: {
+    font-size: 20;
+    fontFamily: Work Sans; sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.4;
+    color: rgba(0;0;0;1);
+    text-align: center;
+    justify-content: center;
+    width: 258px;
+    margin-bottom: 10px;
+  };
+  project_dets_body: {
+    font-size: 15;
+    fontFamily: Open Sans; sans-serif;
+    font-weight: 300;
+    line-height: 167%;
+    letter-spacing: 0.3;
+    color: rgba(0;0;0;1);
+    text-align: center;
+    justify-content: center;
+    width: 258px;
+    margin-bottom: 10px;
+  };
+
+MockUps Type 2 for large Screen
+const styles = StyleSheet.create({
+  Mockupflx2Container: {
+    
+  };
+  Mockupflx2imgsm: {
+    
+  };
+  Mockupflx2imgl: {
+    
+  };
+  Mockupflx2TxtCont: {
+    
+  };
+  Mockupflx2H1: {
+    font-size: 30;
+    fontFamily: Work Sans; sans-serif;
+    font-weight: 700;
+    color: rgba(0;0;0;1);
+    display: flex;
+    align-items: center;
+    width: 413px;
+    height: 112px;
+    margin-bottom: 16px;
+  };
+  Mockupflx2p: {
+    font-size: 19;
+    fontFamily: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 0.4;
+    color: rgba(0,0,0,1);
+    display: flex;
+    align-items: center;
+    width: 387px;
+    height: 133px;
+  };
+})

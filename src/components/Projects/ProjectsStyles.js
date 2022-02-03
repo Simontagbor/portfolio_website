@@ -7,13 +7,41 @@ export const Img = styled.img`
   overflow: hidden;
 `;
 // autry inspired
+//  has to be in a section
+export const Project_section = styled.section`
+ display: ${(props) => props.grid ? "grid" : "flex" };
+  flex-direction: ${(props) => props.row ? "row" : "column" };
+  padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
+  margin: 0 auto;
+  max-width: 1040px;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
 
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+`;
 // container wrapper
 export const Container_wrapper = styled.section`
-width: 90%;
-margin: 0 auto;
+display: grid;
 margin-top: 50px;
 max-width: 1100px;
+flex-direction: column;
+position: relative;
+box-sizing: content-box;
+padding: 32px 48px 0;
+margin: 0 auto;
+max-width: 1040px;
 @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
     display: flex;
@@ -22,16 +50,18 @@ max-width: 1100px;
     padding-bottom: 0;
   }
 `;
-export const Container_flex = styled.div`
+export const Container_flex = styled.section`
   display: -webkit-box;
   /* display: -ms-flexbox; */
   display: flex;
-  z-index: 100;
+  z-index: -1;
   position: relative;
   /* -webkit-box-pack: justify; */
   /* -ms-flex-pack: justify; */
   justify-content: space-between!important;
   margin-bottom: 400px;
+  max-height: 100%;
+  box-sizing: content-box;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
@@ -46,7 +76,8 @@ export const Container_flex = styled.div`
 export const Container_Text = styled.div`
   position: relative;
   justify-items: left;
-  width: 35%;
+  width: 50%;
+  padding-right: 2%;
   @media ${(props) => props.theme.breakpoints.sm}{
     width: 100%;
   }
@@ -55,9 +86,11 @@ export const Container_Text = styled.div`
 export const Container_Text_right = styled.div`
   position: relative;
   justify-items: right;
-  width: 35%;
+  width: 50%;
+  padding-left: 2%;
   @media ${(props) => props.theme.breakpoints.sm}{
     width: 100%;
+  }
 `;
 // contents for container text.
 export const Container_H3 = styled.h3`
@@ -183,7 +216,7 @@ export const ButtonHvr = styled.div`
   transition-timing-function: ease-out;
 `;
 export const ContainerImg_Link = styled.a`
-  width: 55%;
+  width: 50%;
   display: block;
   cursor: pointer;
   transition: all .25s;
