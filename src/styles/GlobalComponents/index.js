@@ -1,5 +1,43 @@
 import styled from 'styled-components'
 
+export const PageNav = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 15px;
+
+position: absolute;
+width: 114px;
+height: 319px;
+right: 32px;
+top: calc(50% - 319px/2 - 963.5px);
+
+mix-blend-mode: luminosity;
+`;
+
+export const PageNavText = styled.div`
+position: static;
+height: 18px;
+left: 15px;
+top: 17px;
+
+font-size: 10px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.11em;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 7px 0px;
+`;
+
+
 export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
