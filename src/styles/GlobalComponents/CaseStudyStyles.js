@@ -212,7 +212,7 @@ export const ProjectDetsH1 = styled.h1`
 export const ProjectDetp = styled.div`
   font-size: 15;
   font-weight: 300;
-  line-height: 167%
+  line-height: 167%;
   width: 258px;
   margin-bottom: 10px;
 
