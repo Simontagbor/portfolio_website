@@ -1,18 +1,17 @@
-import { IoIosArrowBack, IoIosArrowDropdown, IoIosMenu } from 'react-icons/io';
-import styled from 'styled-components';
-
+import { IoIosArrowBack, IoIosArrowDropdown, IoIosMenu } from "react-icons/io";
+import styled from "styled-components";
 
 // Kai inspired
 export const Header_scroll = styled.div`
- /* transform: translate3d(0, -100%, 0); */
- z-index: 0;
- width: 100%;
- height: 100%;
- position: fixed;
- left: 0;
- color: blue;
- -webkit-box-shadow: 0 2px 4px hsl(0deg 0% 50% / 12%);
- box-shadow: 0 2px 4px hsl(0deg 0% 50% / 12%);
+  /* transform: translate3d(0, -100%, 0); */
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  color: blue;
+  -webkit-box-shadow: 0 2px 4px hsl(0deg 0% 50% / 12%);
+  box-shadow: 0 2px 4px hsl(0deg 0% 50% / 12%);
 `;
 
 export const Header_Main = styled.div`
@@ -38,29 +37,29 @@ margin: 0 auto;
     } */
 `;
 export const Header_unfixed = styled.div`
-position: relative;
-/* --webkit-transform: translateY(0); */
-/* --ms-transform: translateY(0); */
-transform: translateY(0);
-width: 100%;
-height: 8vh;
-top: 0;
-left: 0;
-right: 0;
--webkit-transition: all .2s ease-in-out;
--o-transition: all .2s ease-in-out;
-transition: all .2s ease-in-out;
-z-index: 1;
-display: -ms-flexbox;
-display: flex;
--ms-flex-pack: center;
-justify-content: space-between;
+  position: relative;
+  /* --webkit-transform: translateY(0); */
+  /* --ms-transform: translateY(0); */
+  transform: translateY(0);
+  width: 100%;
+  height: 8vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: space-between;
 `;
 
 export const Navbar = styled.div`
-  --webkit-transition: all .65s cubic-bezier(.7, .3, 0, 1);
-  -o-transition: all .65s cubic-bezier(.7, .3, 0, 1);
-  transition: all .65s cubic-bezier(.7, .3, 0, 1);
+  --webkit-transition: all 0.65s cubic-bezier(0.7, 0.3, 0, 1);
+  -o-transition: all 0.65s cubic-bezier(0.7, 0.3, 0, 1);
+  transition: all 0.65s cubic-bezier(0.7, 0.3, 0, 1);
   z-index: auto;
   font-family: inherit;
   font-size: 8px;
@@ -81,23 +80,21 @@ export const Navbar_bg_color = styled.div`
   padding: 0 15px;
   margin: 0 auto;
   @media ${(props) => props.theme.breakpoints.sm} {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(2, 60px);
-      grid-column-gap: 0.5rem;
-      grid-row-gap: 0.5rem;
-    }
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 60px);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
 `;
 
 export const Logo_wrapper = styled.div`
- display: flex;
- align-items:center;
- color:black;
- padding:10px;
- height: inherit;
- /* width:25px; */
- 
-
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 10px;
+  height: inherit;
+  /* width:25px; */
 `;
 
 export const Main_menu = styled(Logo_wrapper)`
@@ -106,9 +103,6 @@ export const Main_menu = styled(Logo_wrapper)`
     display: flex;
   }
 `;
-
-
-
 
 // New Styled Components for header
 export const NavHeader = styled.div`
@@ -130,7 +124,6 @@ export const NavHeader = styled.div`
   z-index: 1;
   position: fixed;
 
-  
   @media ${(props) => props.theme.breakpoints.lg} {
     height: 52px;
     /* width: 768px; */
@@ -138,15 +131,14 @@ export const NavHeader = styled.div`
   @media ${(props) => props.theme.breakpoints.md} {
     /* width: 480px; */
     height: 52px;
-    left: calc(50% - 480px/2);
+    /* left: calc(50% - 480px/2); */
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     /* width: 320px; */
     height: 52px;
-    left: calc(50% - 320px/2);
+    /* left: calc(50% - 320px/2); */
   }
-
 `;
 
 export const NextProjectLink = styled.a`
@@ -157,75 +149,72 @@ export const NextProjectLink = styled.a`
   -webkit-box-align: center;
   align-items: center;
   text-align: justify;
-  color: #7B61FF;
+  color: #7b61ff;
   /* padding: 10px; */
 
   @media ${(props) => props.theme.breakpoints.lg} {
-  /* font-size: calc(1rem + 2vw); */
-  line-height: auto;
+    /* font-size: calc(1rem + 2vw); */
+    line-height: auto;
   }
-
 `;
 
 export const NextProject = styled.div`
   width: 17%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    align-content: center;
+  height: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
 
-  @media ${(props) => props.theme.breakpoints.lg}{
+  @media ${(props) => props.theme.breakpoints.lg} {
     width: 25.5%;
     right: 10px;
-    top: calc(50% - 52px/2);
+    top: calc(50% - 52px / 2);
     padding-right: 1.5px;
   }
 
-  @media ${(props) => props.theme.breakpoints.md}{
+  @media ${(props) => props.theme.breakpoints.md} {
     display: none;
   }
 
-   @media ${(props) => props.theme.breakpoints.sm}{
+  @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
   }
 `;
 
-
-export const  Navlinks = styled.div`
- display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    width: 57%;
-    left: calc(50% - 246px/2);
-    align-content: center;
-    align-items: center;
+export const Navlinks = styled.div`
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  width: 57%;
+  /* left: calc(50% - 246px/2); */
+  align-content: center;
+  align-items: center;
 
   @media ${(props) => props.theme.breakpoints.lg} {
     width: 45%;
     height: 51px;
-    left: calc(50% - 197px/2 + 6.5px);
-    top: calc(50% - 51px/2);
+    left: calc(50% - 197px / 2 + 6.5px);
+    top: calc(50% - 51px / 2);
   }
 
-  @media ${(props) => props.theme.breakpoints.md}{
-   width: 40%;
-   height: 51px;
-   right: 19px;
-   top: calc(50% - 51px/2);
-
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 40%;
+    height: 51px;
+    right: 19px;
+    top: calc(50% - 51px / 2);
   }
 
-  @media ${(props) => props.theme.breakpoints.sm}{
+  @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
   }
 `;
@@ -255,23 +244,22 @@ export const Name = styled.div`
   top: 0px;
   bottom: 0px;
 
-  @media ${(props) => props.theme.breakpoints.lg}{
+  @media ${(props) => props.theme.breakpoints.lg} {
     width: 117px;
     height: 52px;
-    left: 108px;
-    top: calc(50% - 52px/2);
-
+    /* left: 108px;
+    top: calc(50% - 52px/2); */
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
     left: 90px;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm}{
-     width: 86px;
-     height: 52px;
-     left: calc(50% - 86px/2);
-     top: calc(50% - 52px/2);
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 86px;
+    height: 52px;
+    /* left: calc(50% - 86px/2);
+     top: calc(50% - 52px/2); */
   }
 `;
 
@@ -288,20 +276,17 @@ export const NameLink = styled.a`
   margin: 0px 17px;
 
   @media ${(props) => props.theme.breakpoints.lg} {
-   right: 5.13%;
-
+    right: 5.13%;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-   left: 2.56%;
-   right: 2.56%;
-
+    left: 2.56%;
+    right: 2.56%;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm}{
-   right: -1.16%;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    right: -1.16%;
   }
-
 `;
 // TODO needs a review
 export const ArrowLeft = styled(IoIosArrowBack)`
@@ -316,12 +301,9 @@ export const ArrowLeft = styled(IoIosArrowBack)`
   align-items: center;
   /* padding-left: 12px; */
 
-
-
-  @media ${(props) => props.theme.breakpoints.md}  {
-	left: 19px;
-}
-
+  @media ${(props) => props.theme.breakpoints.md} {
+    left: 19px;
+  }
 `;
 export const MenuIcon = styled(IoIosMenu)`
   position: initial;
@@ -338,17 +320,15 @@ export const MenuIcon = styled(IoIosMenu)`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
   }
-
 `;
 export const drop_down = styled.div`
-  @media ${(props) => props.theme.breakpoints.sm}{
+  @media ${(props) => props.theme.breakpoints.sm} {
     position: absolute;
     width: 24px;
     height: 24px;
     right: 17px;
-    top: calc(50% - 24px/2);
+    top: calc(50% - 24px / 2);
   }
-
 `;
 
 export const DropdownMenu = styled.div`
@@ -363,15 +343,15 @@ export const DropdownMenu = styled.div`
   left: 233px;
   top: 38px;
 
-  background: #FDFCFC;
+  background: #fdfcfc;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 `;
 
 export const DropMenuLink = styled.a`
-position: static;
-width: 80px;
-height: 28px;
+  position: static;
+  width: 80px;
+  height: 28px;
 `;
 // END of TODO needs a review
 
@@ -397,7 +377,6 @@ export const Logo_container = styled.div`
 //   padding-right: 0px;
 //   padding-top: 2rem;
 //   width: 100%;
-
 
 //   @media ${(props) => props.theme.breakpoints.sm} {
 //     display: grid;
@@ -452,14 +431,14 @@ export const Logo_container = styled.div`
 // Navigation Links
 export const NavLink = styled.a`
   position: relative;
-    /* font-size: 16px; */
-    /* line-height: 32px; */
-    color: black;
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
-    align-content: center;
-    align-items: center;
-    display: flex;
+  /* font-size: 16px; */
+  /* line-height: 32px; */
+  color: black;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  align-content: center;
+  align-items: center;
+  display: flex;
   &:hover {
     color: black;
     opacity: 1;
@@ -506,8 +485,8 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   display: flex;
   align-self: center;
   transition: 0.3s ease;
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
-  transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
+  opacity: ${({ isOpen }) => (isOpen ? "1" : ".75")};
+  transform: ${({ isOpen }) => (isOpen ? "scaleY(-1)" : "scaleY(1)")};
 
   &:hover {
     opacity: 1;
@@ -519,17 +498,16 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   }
 `;
 
-
 // Social Icons
 
 export const SocialIcons = styled.a`
-transition: 0.3s ease;
-color: white;
-border-radius: 50px;
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
   padding: 4px;
-&:hover {
+  &:hover {
     background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
   }
-`
+`;
