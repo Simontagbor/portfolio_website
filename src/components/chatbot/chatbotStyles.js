@@ -2,18 +2,23 @@ import styled from 'styled-components';
 
 
 // MAIN CONTENTS
-export const ContentBox = styled.main`
-  display: grid;
+export const ContentBox = styled.section`
+  display: flex;
   margin-top: 50px;
   max-width: 1100px;
-  flex-direction: column;
   position: relative;
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 32px 48px 0;
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 814px;
+  /* place-self: flex-end; */
+  align-content: center;
+  align-items: center;
+  top: 50px;
+  justify-content: space-between;
+  flex-direction: column;
+
   @media ${(props) => props.theme.breakpoints.sm} {
-      width: 100%;
       display: flex;
       flex-direction: column;
       padding: 2rem;
@@ -26,46 +31,47 @@ export const TextContainer = styled.div`
  display: flex;
  flex-direction: column;
  align-items: flex-start;
- padding: 3px;
+ padding: 12px;
+ position: relative;
+ height: max-content;
+ max-width: 90%;
 
- position: absolute;
- height: auto;
- left: 18.89%;
- right: 18.89%;
- /* top: 191px; */
 
  @media ${(props) => props.theme.breakpoints.lg}{
   width:  494;
-  left: 17.84%;
-  right: 17.84;
+  /* left: 17.84%;
+  right: 17.84; */
 
  }
 
  @media ${(props) => props.theme.breakpoints.md}{
   width: 380px;
-  left: 10.31%;
-  right: 10.62%;
+  /* left: 10.31%;
+  right: 10.62%; */
  }
 
  @media ${(props) => props.theme.breakpoints.sm} {
   width: 253px;
-  left: 8.75%;
-  right: 12.19%;
+  /* left: 8.75%;
+  right: 12.19%; */
  }
 `;
 
 export const H1 = styled.h1`
-font-family: Work Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 28px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.15em;
-
-color: #000000;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  -webkit-letter-spacing: 0.15em;
+  -moz-letter-spacing: 0.15em;
+  -ms-letter-spacing: 0.15em;
+  letter-spacing: 0.15em;
+  color: #000000;
 
 @media ${(props) => props.theme.breakpoints.lg} {
   font-size: 20px;
@@ -88,31 +94,23 @@ color: #000000;
 
 export const Paragraph = styled.p`
 position: static;
-left: 0.33%;
-right: 0.33%;
-top: 25.81%;
-/*bottom: 40.09%;*/
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-text-align: justify;
-letter-spacing: 0.015em;
-color: black;
-
- /*auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-margin: 25px 0px;
+  top: 25.81%;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.015em;
+  color: black;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 25px 0px;
 
 @media ${(props) => props.theme.breakpoints.lg} {
   font-size: 15px;
   line-height: 166.68%;
   letter-spacing: 0.02em;
-  left: 3px;
+  /* left: 3px; */
 }
 
 @media ${(props) => props.theme.breakpoints.md}{
@@ -131,12 +129,12 @@ margin: 25px 0px;
 
 export const H2 = styled.h2`
  position: static;
- left: 0.33%;
- right: 0.33%;
+ /* left: 0.33%;
+ right: 0.33%; */
  /*top: 71.43%;*/
  /*bottom: 14.29%;*/
- font-family: Work Sans;
- font-style: normal;
+ /* font-family: Work Sans;
+ font-style: normal; */
  font-weight: 500;
  font-size: 22px;
  line-height: 26px;
@@ -181,8 +179,8 @@ padding: 20px;
 position: absolute;
 width: 870px;
 height: 852px;
-left: 293px;
-top: 739px;
+/* left: 293px; */
+/* top: 739px; */
 
 @media ${(props) => props.theme.breakpoints.lg}{
  flex-direction: column;
@@ -190,8 +188,8 @@ top: 739px;
 
  width: 512px;
  height: 830px;
- left: calc(50% - 512px/2 - 21px);
- top: calc(50% - 830px/2 - 936px);
+ /* left: calc(50% - 512px/2 - 21px);
+ top: calc(50% - 830px/2 - 936px); */
 }
 
 @media ${(props) => props.theme.breakpoints.md} {
@@ -223,8 +221,6 @@ export const MockImageC = styled.div`
  height: 812px;
  left: calc(50% - 375px/2 + 227.5px);
  top: 20px;
- background-image:('../../../public/images/profile.jpeg');
-
  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  border-radius: 22px;
 
@@ -281,40 +277,4 @@ export const MockImageC = styled.div`
  }
 `;
 
-export const PageNav = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-padding: 15px;
-
-position: absolute;
-width: 114px;
-height: 319px;
-right: 32px;
-top: calc(50% - 319px/2 - 963.5px);
-
-mix-blend-mode: luminosity;
-`;
-
-export const PageNavText = styled.div`
-position: static;
-height: 18px;
-left: 15px;
-top: 17px;
-
-font-size: 10px;
-line-height: 14px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.11em;
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 7px 0px;
-`;
 

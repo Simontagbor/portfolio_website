@@ -4,20 +4,24 @@ import styled from 'styled-components';
 
 export const Mockup_flex1 = styled.div`
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 19;
-  padding-bottom: 19;
-  padding-left: 19;
-  padding-right: 19;
+ display: flex;
+ flex-direction: row;
+ /* justify-content: center; */
+ /* padding-top: 19px; */
+ padding-bottom: 19px;
+ /* padding-left: 19px; */
+ max-width: 100%;
+ padding-right: 19;
+ flex-wrap: nowrap;
 
   @media ${(props) => props.theme.breakpoints.lg} {
     flex-direction: column;
+    align-items:center;
     }
 
   @media ${(props) => props.theme.breakpoints.md} {
     flex-direction: column;
+    align-items:center;
     }
   @media ${(props) => props.theme.breakpoints.sm} {
     flex-direction: column;
@@ -26,13 +30,13 @@ export const Mockup_flex1 = styled.div`
 
 export const TextBox = styled.div`
   display: flex;
-  flex-direction : column;
-  padding-top: 8;
-  padding-bottom: 8;
+  flex-direction: column;
+  padding-top: 0px;
+  padding-bottom: 8px;
   padding-left: 0;
   padding-right: 0;
-  margin-right: 40px;
-  width: 415px;
+  margin-right: 28px;
+  width: 424px;
   height: 186px;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -48,9 +52,9 @@ export const TextBox = styled.div`
   }
 `;
 
-export const ImgContainer = styled.div`
-  width: 375px;
-  height: 812px;
+export const ImgContainer = styled.img`
+  width: 300px;
+  height: 526px;
   @media ${(props) => props.theme.breakpoints.md} {
     width: 288.75px;
     height: 629px;
@@ -63,12 +67,13 @@ export const ImgContainer = styled.div`
 
 
 export const TextBoxH1 = styled.div`
-  font-size: 30;
+  font-size: 30px;
   font-weight: 900;
   letter-spacing: 3.5;
   text-align: center;
   justify-content: center;
   margin-bottom: 23px;
+
 
   @media ${(props) => props.theme.breakpoints.md} {
      font-size: 15;
@@ -79,9 +84,9 @@ export const TextBoxH1 = styled.div`
 `;
 
 
-export const TextBoxP = styled.div`
-  font-size: 18;
-  text-align: right;
+export const TextBoxP = styled.p`
+  font-size: 16px;
+  text-align: left;
   justify-content: flex-end;
   display: flex;
   align-items: center;
@@ -89,6 +94,8 @@ export const TextBoxP = styled.div`
   height: 110px;
   font-weight: 400;
   letter-spacing: 0.3;
+  flex-wrap: wrap;
+  flex-direction: row;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 13;
@@ -118,7 +125,7 @@ export const  Mockups3l = styled.div`
     }
 `;
 
-export const Mockups3Img = styled.div`
+export const Mockups3Img = styled.img`
   width: 288.75px;
   height: 629px;
   margin-right: 67px;
@@ -150,7 +157,6 @@ export const ProjectDets = styled.div`
 
 
   @media ${(props) => props.theme.breakpoints.lg} {
-     
     }
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -212,7 +218,7 @@ export const ProjectDetsH1 = styled.h1`
 export const ProjectDetp = styled.div`
   font-size: 15;
   font-weight: 300;
-  line-height: 167%
+  line-height: 167%;
   width: 258px;
   margin-bottom: 10px;
 

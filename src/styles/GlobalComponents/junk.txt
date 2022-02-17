@@ -1,0 +1,31 @@
+    
+    
+    TextBox H1
+    
+TextBox P
+    
+
+    MockupFlex1
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    
+
+
+    imgage
+    
+
+
+flex TextBox
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    
+}
+H1
+
+
+Paragrap
+
+
+
