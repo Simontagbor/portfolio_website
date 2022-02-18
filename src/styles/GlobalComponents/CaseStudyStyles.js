@@ -287,3 +287,156 @@ export const Mockup_flex2TXt = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
   }
 `;
+export const MacbookPro1441 = styled.div`
+  width: 100%;
+  height: 982px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Overviewlg = styled.div`
+  width: 21.85%;
+  height: 49px;
+  display: flex;
+  margin-left: 10.12%;
+  margin-top: 186px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const Themelinelg = styled.div`
+  width: 0%;
+  height: 49px;
+  border-style: solid;
+  border-width: 12px;
+  border-color: rgba(35.52, 134.53, 250.75, 1);
+`;
+
+export const ProjectOverviewlg = styled.span`
+  height: 35.12px;
+  font-size: 36px;
+  text-decoration: NONE;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: black;
+  display: inline;
+  font-family: Open Sans;
+  font-weight: 400;
+  margin-left: -0.66%;
+  margin-top: 2.28px;
+
+  &::first-line {
+    line-height: 1;
+  }
+`;
+
+export const Infocardcontainer = styled.div`
+  width: 74.12%;
+  height: 192px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 13.03%;
+  margin-top: 160px;
+`;
+
+export const Infocard = styled.div`
+  width: 30.22%;
+  height: 192px;
+  border-radius: 24px 24px 24px 24px;
+  background: rgba(229, 229, 229, 0.56);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const Icon = styled.div`
+  width: 11.51%;
+  height: 37px;
+  border-radius: 9999px;
+  background: rgba(35.52, 134.53, 250.75, 1);
+  margin-left: 4.13%;
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+export const Database = styled.div`
+  width: 46.15%;
+  height: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+`;
+
+export const Vectordiv = styled.div`
+  width: 100%;
+  height: 17px;
+  background-image: url("https://storage.googleapis.com/rd-stg-designs/project/5eed9488-bb02-459f-a6b3-ce5857c05302/assets/e3ffcab2-154a-4fb3-81dd-6ead56cc3af8.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+`;
+
+export const VectorImg = styled.img`
+  width: 18px;
+  height: 6px;
+  display: block;
+  margin-top: -3px;
+`;
+
+export const VectorImg2 = styled.img`
+  width: 18px;
+  height: 3px;
+  display: block;
+  margin-top: 4px;
+`;
+
+export const Infocardtext = styled.div`
+  width: 95.57%;
+  height: 82.02px;
+  margin-left: 4.43%;
+  margin-top: -20.14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const Heading = styled.span`
+  height: 17.01px;
+  font-size: 18px;
+  text-decoration: NONE;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(35.52, 134.53, 250.75, 1);
+  display: inline;
+  font-family: Work Sans;
+  font-weight: 400;
+
+  &::first-line {
+    line-height: 1;
+  }
+`;
+
+export const Details = styled.span`
+  height: 46.07px;
+  font-size: 12px;
+  text-decoration: NONE;
+  letter-spacing: 0.005em;
+  line-height: 142.1875%;
+  color: black;
+  text-align: justify;
+  margin-left: -0.17%;
+  margin-top: -0.79px;
+  display: inline;
+  font-family: Open Sans;
+  font-weight: 400;
+
+  &::first-line {
+    line-height: 1;
+  }
+`;

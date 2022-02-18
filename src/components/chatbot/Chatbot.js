@@ -13,7 +13,21 @@ import {
   Mockup_flex1,
   TextBox,
   TextBoxH1,
-  TextBoxP
+  TextBoxP,
+  MacbookPro1441,
+  Overviewlg,
+  Themelinelg,
+  ProjectOverviewlg,
+  Infocardcontainer,
+  Infocard,
+  Icon,
+  Database,
+  Vectordiv,
+  VectorImg,
+  VectorImg2,
+  Infocardtext,
+  Heading,
+  Details
 } from "../../styles/GlobalComponents/CaseStudyStyles";
 
 const ChatbotCase = () => (
@@ -50,7 +64,65 @@ const ChatbotCase = () => (
       </TextBox>
       <ImgContainer src="images/projects.jpeg"></ImgContainer>
     </Mockup_flex1>
+    <MacbookPro1441>
+      <Overviewlg>
+        <Themelinelg />
+        <ProjectOverviewlg>Project Overview</ProjectOverviewlg>
+      </Overviewlg>
+      <Infocardcontainer>
+        <Infocard>
+          <Icon>
+            <Database>
+              <Vectordiv>
+                <VectorImg src="https://storage.googleapis.com/rd-stg-designs/project/5eed9488-bb02-459f-a6b3-ce5857c05302/assets/d6cb997d-0667-4edb-bcf8-6fced6482e84.png" />
+                <VectorImg2 src="https://storage.googleapis.com/rd-stg-designs/project/5eed9488-bb02-459f-a6b3-ce5857c05302/assets/b80e9199-34f0-4455-b772-0e8196a1df07.png" />
+              </Vectordiv>
+            </Database>
+          </Icon>
+          <Infocardtext>
+            <Heading>Heading</Heading>
+            <Details>
+              Details will go here lorem ipsum kinda details if you know what i
+              mean. so we can alll agreee that this is becoming great
+            </Details>
+          </Infocardtext>
+        </Infocard>
+        <Infocard>
+          <Icon>
+            <Database>
+              <Vectordiv>
+                <VectorImg src="https://storage.googleapis.com/rd-stg-designs/project/5eed9488-bb02-459f-a6b3-ce5857c05302/assets/921301ed-662f-4a10-b270-f81c36156a2c.png" />
+                <VectorImg2 src="https://storage.googleapis.com/rd-stg-designs/project/5eed9488-bb02-459f-a6b3-ce5857c05302/assets/d572d23b-27ce-433f-84db-a9a7e8ecc0d5.png" />
+              </Vectordiv>
+            </Database>
+          </Icon>
+          <Infocardtext>
+            <Heading>Heading</Heading>
+            <Details>
+              Details will go here lorem ipsum kinda details if you know what i
+              mean. so we can alll agreee that this is becoming great
+            </Details>
+          </Infocardtext>
+        </Infocard>
+        <Infocard>
+          <Icon>
+            <Database>
+              <Vectordiv>
+                <VectorImg src="https://storage.googleapis.com/rd-stg-designs/project/5eed9488-bb02-459f-a6b3-ce5857c05302/assets/1bddba30-e24d-45db-8104-199c41888bfa.png" />
+                <VectorImg2 src="https://storage.googleapis.com/rd-stg-designs/project/5eed9488-bb02-459f-a6b3-ce5857c05302/assets/c9f34a24-c834-4eac-8271-e8d9b9ba1b2d.png" />
+              </Vectordiv>
+            </Database>
+          </Icon>
+          <Infocardtext>
+            <Heading>Heading</Heading>
+            <Details>
+              Details will go here lorem ipsum kinda details if you know what i
+              mean. so we can alll agreee that this is becoming great
+            </Details>
+          </Infocardtext>
+        </Infocard>
+      </Infocardcontainer>
+    </MacbookPro1441>
   </ContentBox>
 );
-
 export default ChatbotCase;
