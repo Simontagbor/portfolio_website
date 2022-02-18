@@ -214,15 +214,12 @@ export const ProjectDetp = styled.div`
   margin-bottom: 10px;
 
   @media ${(props) => props.theme.breakpoints.lg} {
-
-    }
+  }
 
   @media ${(props) => props.theme.breakpoints.md} {
-
-    }
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
-
-    }
+  }
 `;
 
 export const Mockup_flex2 = styled.div`
@@ -293,6 +290,11 @@ export const MacbookPro1441 = styled.div`
   background: white;
   display: flex;
   flex-direction: column;
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 640px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
 `;
 
 export const Overviewlg = styled.div`
@@ -304,13 +306,31 @@ export const Overviewlg = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 73.31%;
+    height: 379px;
+    margin-left: 13.28%;
+    margin-top: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 73.33%;
+    height: 394px;
+    margin-left: 13.33%;
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `;
 
 export const Themelinelg = styled.div`
   width: 0%;
   height: 49px;
   border-style: solid;
-  border-width: 12px;
+  border-width: 6px;
   border-color: rgba(35.52, 134.53, 250.75, 1);
 `;
 
@@ -340,6 +360,11 @@ export const Infocardcontainer = styled.div`
   justify-content: space-between;
   margin-left: 13.03%;
   margin-top: 160px;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
 `;
 
 export const Infocard = styled.div`
@@ -350,6 +375,13 @@ export const Infocard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 46.89%;
+    height: 172px;
+    border-radius: 12px 12px 12px 12px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
 `;
 
 export const Icon = styled.div`
@@ -397,13 +429,16 @@ export const VectorImg2 = styled.img`
 `;
 
 export const Infocardtext = styled.div`
-  width: 95.57%;
-  height: 82.02px;
-  margin-left: 4.43%;
-  margin-top: -20.14px;
+  width: 85%;
+  height: 78.02px;
+  margin: 5.43%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
 `;
 
 export const Heading = styled.span`
@@ -419,6 +454,10 @@ export const Heading = styled.span`
 
   &::first-line {
     line-height: 1;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
   }
 `;
 
@@ -438,5 +477,9 @@ export const Details = styled.span`
 
   &::first-line {
     line-height: 1;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
   }
 `;
