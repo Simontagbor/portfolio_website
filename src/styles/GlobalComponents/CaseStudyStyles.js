@@ -284,12 +284,15 @@ export const Mockup_flex2TXt = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
   }
 `;
+
 export const MacbookPro1441 = styled.div`
-  width: 100%;
-  height: 982px;
-  background: white;
-  display: flex;
-  flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   @media ${(props) => props.theme.breakpoints.md} {
     height: 640px;
   }
@@ -298,31 +301,29 @@ export const MacbookPro1441 = styled.div`
 `;
 
 export const Overviewlg = styled.div`
-  width: 21.85%;
-  height: 49px;
-  display: flex;
-  margin-left: 10.12%;
-  margin-top: 186px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 73.31%;
-    height: 379px;
-    margin-left: 13.28%;
-    margin-top: 53px;
+    width: 100%;
+    height: 49px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* margin-left: 10.12%; */
+    /* margin-top: 186px; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    height: 60px;
+    /* margin-left: 13.28%; */
+    margin-top: 53px;
+    flex-direction: row;
+    justify-content: flex-start;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 73.33%;
-    height: 394px;
-    margin-left: 13.33%;
-    margin-top: 38px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
+    height: 32px;
+    margin-left: 0%;
+    margin-top: 27px;
+    flex-direction: row;
+    align-items: center;
   }
 `;
 
@@ -332,68 +333,141 @@ export const Themelinelg = styled.div`
   border-style: solid;
   border-width: 6px;
   border-color: rgba(35.52, 134.53, 250.75, 1);
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 32px;
+    border-style: solid;
+    border-width: 8px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 32px;
+    border-style: solid;
+    border-width: 8px;
+  }
 `;
 
 export const ProjectOverviewlg = styled.span`
-  height: 35.12px;
-  font-size: 36px;
-  text-decoration: NONE;
-  letter-spacing: 0em;
-  line-height: 100%;
-  color: black;
-  display: inline;
-  font-family: Open Sans;
-  font-weight: 400;
-  margin-left: -0.66%;
-  margin-top: 2.28px;
+    height: 35.12px;
+    font-size: 30px;
+    text-decoration: NONE;
+    letter-spacing: 0em;
+    line-height: 100%;
+    color: black;
+    display: inline;
+    font-family: Open Sans;
+    font-weight: 400;
+    margin-left: 0.66%;
+    margin-top: 2.28px;
 
   &::first-line {
     line-height: 1;
   }
-`;
-
-export const Infocardcontainer = styled.div`
-  width: 74.12%;
-  height: 192px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 13.03%;
-  margin-top: 160px;
-
   @media ${(props) => props.theme.breakpoints.md} {
+    height: 16.58px;
+    font-size: 17px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    height: 16.58px;
+    font-size: 17px;
+    margin-top: 0.94px;
+  }
+`;
+
+/* misssing overviewnflex component */
+export const Overviewflex = styled.div`
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 435px;
+    margin-bottom: 25%;
+
+   @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    height: fit-content;
+    /* margin-left: 1.28%; */
+    margin-top: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+
+  }
+
+`;
+export const InfocardGroup = styled.div`
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* margin: 2.03%; */
+    /* margin-top: 48px; */
+    /* flex-wrap: wrap; */
+`;
+export const Infocardcontainer = styled.div`
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 2.03%; */
+    /* margin-top: 48px; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    height: 197px;
+    flex-direction: row;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 73.33%;
+    height: 394px;
+    margin-left: 13.33%;
+    margin-top: 38px;
+    flex-direction: column;
   }
 `;
 
 export const Infocard = styled.div`
-  width: 30.22%;
-  height: 192px;
-  border-radius: 24px 24px 24px 24px;
-  background: rgba(229, 229, 229, 0.56);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    width: 277px;
+    height: 178px;
+    border-radius: 24px 24px 24px 24px;
+    background: rgba(229,229,229,0.56);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 21px;
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 46.89%;
+    width: 48.89%;
     height: 172px;
     border-radius: 12px 12px 12px 12px;
+    margin: 0px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+    height: 172px;
+    border-radius: 12px 12px 12px 12px;
   }
 `;
 
 export const Icon = styled.div`
-  width: 11.51%;
-  height: 37px;
-  border-radius: 9999px;
-  background: rgba(35.52, 134.53, 250.75, 1);
-  margin-left: 4.13%;
-  margin-top: 19px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+    width: 37px;
+    height: 37px;
+    border-radius: 9999px;
+    background: rgba(35.52,134.53,250.75,1);
+    margin-left: 4.13%;
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  @media ${(props) => props.theme.breakpoints.md} {
+
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+  
+  }
 `;
 
 export const Database = styled.div`
@@ -402,6 +476,12 @@ export const Database = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
+  @media ${(props) => props.theme.breakpoints.md} {
+
+}
+@media ${(props) => props.theme.breakpoints.sm} {
+
+}
 `;
 
 export const Vectordiv = styled.div`
@@ -429,15 +509,21 @@ export const VectorImg2 = styled.img`
 `;
 
 export const Infocardtext = styled.div`
-  width: 85%;
-  height: 78.02px;
-  margin: 5.43%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    width: 85%;
+    height: 84px;
+    margin: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   @media ${(props) => props.theme.breakpoints.md} {
+    width: 91.75%;
+    height: 86.1px;
+    margin: 5.37%;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    width: 91.75%;
+    height: 86.1px;
+    margin: 5.37%;
   }
 `;
 
@@ -456,13 +542,17 @@ export const Heading = styled.span`
     line-height: 1;
   }
   @media ${(props) => props.theme.breakpoints.md} {
+    height: 13.23px;
+    font-size: 14px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    height: 13.23px;
+    font-size: 14px;
   }
 `;
 
 export const Details = styled.span`
-  height: 46.07px;
+  height: auto;
   font-size: 12px;
   text-decoration: NONE;
   letter-spacing: 0.005em;
@@ -479,7 +569,239 @@ export const Details = styled.span`
     line-height: 1;
   }
   @media ${(props) => props.theme.breakpoints.md} {
+    height: 63px;
+    font-size: 12px;
+    margin-left: -0.23%;
+    margin-top: -0.65px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    height: 63px;
+    font-size: 12px;
+    margin-left: -0.23%;
+    margin-top: -0.65px;
   }
 `;
+
+// understanding the user
+export const Themetitle = styled.div`
+  width: 100%;
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    height: 32px;
+    /* margin-left: 10.29%; */
+    margin-top: 96px;
+    /* align-self: flex-start; */
+    /* display: flex; */
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 65.01%;
+    height: 32px;
+    margin-left: 10%;
+    margin-top: 93px;
+  }
+`;
+
+export const ThememarkerRed = styled.div`
+ width: 15px;
+    height: 49px;
+    border-width: 12px;
+    border-color: rgba(250.75,35.52,74.26,1);
+    /* display: flex; */
+    background-color: #fb244a;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 32px;
+    border-width: 8px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 32px;
+    border-style: solid;
+    border-width: 8px;
+
+  }
+`;
+
+export const ProjectOverviewh1sm5 = styled.span`
+   height: 36px;
+  font-size: 30px;
+  line-height: 100%;
+  color: black;
+  margin-left: 0.31%;
+  margin-top: 1.4px;
+  display: inline;
+  font-family: Open Sans;
+  font-weight: 400;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 17px;
+    font-size: 17px;
+    margin-left: 0.54%;
+    margin-top: 0.52px;
+    display: inline;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 17px;
+    font-size: 17px;
+    margin-left: 0.54%;
+    margin-top: 0.52px;
+    display: inline;
+  }
+`;
+
+export const RedThemeContainer = styled.div`
+width: 95.71%;
+    height: 225px;
+    /* margin-left: 4.29%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 95.19%;
+    height: fit-content;
+    /* margin-left: 16.41%; */
+    margin-top: 119.5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 66.11%;
+    height: 190px;
+    margin-left: 16.81%;
+    margin-top: 102px;
+  }
+`;
+
+export const RedFrame = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 351px;
+  align-items: center;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 48.06%;
+    height: 85px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+    height: 85px;
+  }
+`;
+
+export const DetailCard = styled.div`
+width: 50.74%;
+  height: 118px;
+  border-radius: 12px 12px 12px 12px;
+  background: rgba(229,229,229,0.56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 43.95%;
+    height: 85px;
+    margin: 29px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 45.8%;
+    height: 85px;
+  }
+`;
+
+export const IconRed = styled.div`
+  width: 37px;
+  height: 37px;
+  border-radius: 9999px;
+  background: rgba(250.75, 35.52, 74.26, 1);
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 37px;
+    height: 37px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 37px;
+    height: 37px;
+
+  }
+`;
+
+export const H1_R = styled.span`
+  height: 13.32px;
+  font-size: 18px;
+  text-decoration: NONE;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(94, 94, 94, 1);
+  margin-left: 0.9%;
+  margin-top: 24.73px;
+  display: inline;
+  font-family: Work Sans;
+  font-weight: 400;
+
+  &::first-line {
+    line-height: 1;
+  }
+  
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 8.88px;
+    font-size: 12px;
+    margin-left: -1.3%;
+    margin-top: 13.99px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 8.88px;
+    font-size: 12px;
+    margin-left: -1.3%;
+    margin-top: 13.99px;
+
+  }
+`;
+
+export const Quote = styled.span`
+  height: 26.6px;
+  font-size: 28px;
+  text-decoration: NONE;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(94, 94, 94, 1);
+  font-style: italic;
+  text-align: center;
+  margin-left: 0.87%;
+  margin-top: -1.33px;
+  display: inline;
+  font-family: Work Sans;
+
+  &::first-line {
+    line-height: 1;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 15.2px;
+    font-size: 16px;
+    margin-left: 15.82%;
+    margin-top: 104.24px;
+
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 27.35px;
+    font-size: 13px;
+    margin-left: 19.56%;
+    margin-top: 84.63px;
+  }
+`;
+
