@@ -379,7 +379,7 @@ export const Overviewflex = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 435px;
+    height: 365px;
     margin-bottom: 25%;
 
    @media ${(props) => props.theme.breakpoints.md} {
@@ -666,18 +666,17 @@ width: 95.71%;
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 95.19%;
-    height: fit-content;
-    /* margin-left: 16.41%; */
+    height: 292px;
     margin-top: 119.5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: space-around;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 66.11%;
     height: 190px;
-    margin-left: 16.81%;
     margin-top: 102px;
   }
 `;
@@ -686,21 +685,21 @@ export const RedFrame = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 351px;
+  width: 241px;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.md} {
     width: 48.06%;
-    height: 85px;
+    height: 130px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    height: 85px;
+    height: 136px;
   }
 `;
 
 export const DetailCard = styled.div`
-width: 50.74%;
-  height: 118px;
+width: 70.74%;
+  height: 112px;
   border-radius: 12px 12px 12px 12px;
   background: rgba(229,229,229,0.56);
   display: flex;
@@ -708,14 +707,14 @@ width: 50.74%;
   align-items: center;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 43.95%;
-    height: 85px;
-    margin: 29px;
+    width: 78.95%;
+    height: 125px;
+    margin: 6px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 45.8%;
-    height: 85px;
+    width: 55.8%;
+    height: 108px;
   }
 `;
 
@@ -760,13 +759,11 @@ export const H1_R = styled.span`
   @media ${(props) => props.theme.breakpoints.md} {
     height: 8.88px;
     font-size: 12px;
-    margin-left: -1.3%;
-    margin-top: 13.99px;
+    margin-top: 22.99px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     height: 8.88px;
     font-size: 12px;
-    margin-left: -1.3%;
     margin-top: 13.99px;
 
   }
@@ -781,8 +778,7 @@ export const Quote = styled.span`
   color: rgba(94, 94, 94, 1);
   font-style: italic;
   text-align: center;
-  margin-left: 0.87%;
-  margin-top: -1.33px;
+  margin-top: 1.33px;
   display: inline;
   font-family: Work Sans;
 
@@ -793,8 +789,7 @@ export const Quote = styled.span`
     height: 15.2px;
     font-size: 16px;
     margin-left: 15.82%;
-    margin-top: 104.24px;
-
+    margin-top: 74.24px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -805,3 +800,320 @@ export const Quote = styled.span`
   }
 `;
 
+// New components - userbility study
+export const Line4 = styled.div`
+  width: 0%;
+  height: 49px;
+  border-style: solid;
+  border-width: 12px;
+  border-color: rgba(246, 201, 14, 1);
+  @media ${(props) => props.theme.breakpoints.md} {
+    
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+   
+
+  }
+`;
+
+export const CardContainer = styled.div`
+  width: 65.98%;
+  height: fit-content;
+  margin-top: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 90.15%;
+    height: 327.58px;
+    margin-top: 96.5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 85.31%;
+    height: 287.58px;
+    margin-top: 89.5px;
+  }
+`;
+
+export const CardGroup1 = styled.div`
+  width: 48%;
+  height: 227.87px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    height: 145.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+
+  }
+`;
+
+export const GInfocard0 = styled.div`
+  width: 45.48%;
+  height: 191.87px;
+  border-radius: 12px 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  place-self: center;
+  align-items: center;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 40.5%;
+    height: 120.5px;
+    align-items: center;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
+`;
+
+export const Icon2 = styled.div`
+  width: 37px;
+  height: 37px;
+  border-radius: 9999px;
+  background: rgba(246, 201, 14, 1);
+  margin-left: 29.37%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+
+export const H1user1 = styled.span`
+  height: 17.86px;
+  font-size: 19px;
+  text-decoration: NONE;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: black;
+  font-weight: 500;
+  margin-top: -0.96px;
+  display: inline;
+  font-family: Work Sans;
+
+  &::first-line {
+    line-height: 1;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 11.28px;
+    font-size: 12px;
+    margin-left: -0.62%;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+
+  }
+`;
+
+export const Puser = styled.span`
+  height: 17.01px;
+  font-size: 18px;
+  text-decoration: NONE;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: black;
+  margin-top: -1.27px;
+  display: inline;
+  font-family: Work Sans;
+  font-weight: 400;
+
+  &::first-line {
+    line-height: 1;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 11.34px;
+    font-size: 12px;
+    margin-top: -0.51px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+   
+
+  }
+`;
+
+/* new component pain points */
+export const PCardCont = styled.div`
+  width: 79.97%;
+  height: 400px;
+  border-radius: 24px 24px 24px 24px;
+  background: rgba(229,229,229,0.56);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 117px;
+  align-items: center;
+  margin-bottom: 350px;
+  align-content: center;
+  justify-content: space-evenly;
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 1060px;
+    margin-top: 73px;
+    margin-bottom: 487px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 0px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+    height: 1102px;
+    border-radius: 0px;
+    flex-direction: column;
+    margin-top: 33px;
+  }
+`;
+
+export const Pcard = styled.div`
+  width: 18.34%;
+  height: 285px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 12px 12px 12px 12px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 48%;
+    height: 238px;
+    align-self: center;
+    margin: 24px;
+    align-content: center;
+    align-items: center;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 71.95%;
+    height: 220px;
+
+  }
+`;
+
+export const PcardIconcont = styled.div`
+  width: 37px;
+  height: 37px;
+  margin-top: 18.35px;
+  border-radius: 9999px;
+  background: rgba(250.75, 35.52, 74.26, 1);
+  display: flex;
+  justify-content: center;
+  @media ${(props) => props.theme.breakpoints.md} {
+    
+    margin-top: 9.85px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+   
+
+
+  }
+`;
+
+export const Numbers = styled.span`
+  height: 15.84px;
+  font-size: 24px;
+  text-decoration: NONE;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 8.66px;
+  display: inline;
+  font-family: Work Sans;
+  margin-left: -5.13%;
+
+  &::first-line {
+    line-height: 1;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 12.06px;
+    font-size: 18px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+   
+
+  }
+`;
+
+export const PpH1 = styled.span`
+  height: 13.07px;
+  font-size: 18px;
+  text-decoration: NONE;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(250.75, 35.52, 74.26, 1);
+  text-align: center;
+  margin-top: 20.33px;
+  display: inline;
+  font-family: Work Sans;
+  font-weight: 400;
+
+  &::first-line {
+    line-height: 1;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 8.71px;
+    font-size: 12px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+   
+   margin-left: 0.94%;
+  }
+`;
+
+export const PpP = styled.div`
+  width: 158.46px;
+  height: 156.7px;
+  border-radius: 12px 12px 12px 12px;
+  margin-top: 10.7px;
+  display: flex;
+  align-items: center;
+  color: black;
+  justify-content: space-evenly;
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 144.31px;
+    height: 81.17px;
+    margin-left: 2.84%;
+    margin-top: 43.41px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+   width: 185.89px;
+   height: 78.71px; 
+   margin-left: 2.46%;
+   margin-top: 42.41px;
+
+  }
+`;
+
+export const parag = styled.p`
+  height: 78.71px;
+  font-size: 12px;
+  text-decoration: NONE;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: black;
+  text-align: center;
+  display: inline;
+  font-family: Work Sans;
+  font-weight: 400;
+  margin-top: -0.75px;
+
+  &::first-line {
+    line-height: 1;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+   height: 81.17px;
+   font-size: 12px;
+   margin-top: -0.75px; 
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+   height: 78.71px;
+  }
+`;

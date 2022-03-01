@@ -39,6 +39,7 @@ import {
   ProjectOverviewh1sm5,
   RedThemeContainer,
   InfocardGroup,
+  CardContainer, CardGroup1, GInfocard0, H1user1, Puser,  PCardCont, Pcard, PcardIconcont, Numbers, PpH1, PpP, parag, Icon2,
 
 
 
@@ -170,8 +171,8 @@ const ChatbotCase = () => (
         effectively delivering on event objectives.
       </Paragraph>
       <H2>Defining The Problem</H2>
-    </TextContainer>
-    <Mockup_flex1>
+      </TextContainer>
+      <Mockup_flex1>
       <ImgContainer src="images/projects.jpeg"></ImgContainer>
       <TextBox>
         <TextBoxH1>The feature</TextBoxH1>
@@ -180,8 +181,8 @@ const ChatbotCase = () => (
           events'
         </TextBoxP>
       </TextBox>
-    </Mockup_flex1>
-    <Mockup_flex1>
+      </Mockup_flex1>
+      <Mockup_flex1>
       <TextBox>
         <TextBoxH1>The feature</TextBoxH1>
         <TextBoxP>
@@ -190,7 +191,7 @@ const ChatbotCase = () => (
         </TextBoxP>
       </TextBox>
       <ImgContainer src="images/projects.jpeg"></ImgContainer>
-    </Mockup_flex1>
+      </Mockup_flex1>
       <Overviewflex>
       <Themetitle>
         <ThememarkerRed />
@@ -248,7 +249,95 @@ const ChatbotCase = () => (
         “some thoughtful quote about user centered design and or process”
       </Quote>
       </Overviewflex>
-
+      <CardContainer>
+        <CardGroup1>
+          <GInfocard0>
+            <Icon2></Icon2>
+             <H1user1>
+               Research Type;
+            </H1user1>
+            <Puser>
+              [Type here]
+            </Puser>
+          </GInfocard0>
+          <GInfocard0>
+            <Icon2></Icon2>
+            <H1user1>
+               Research Type;
+             </H1user1>
+             <Puser>
+               [Type here]
+             </Puser>
+          </GInfocard0>
+        </CardGroup1>
+        <CardGroup1>
+          <GInfocard0>
+            <Icon2></Icon2>
+             <H1user1>
+               Research Type;
+            </H1user1>
+            <Puser>
+              [Type here]
+            </Puser>
+          </GInfocard0>
+          <GInfocard0>
+            <Icon2></Icon2>
+            <H1user1>
+               Research Type;
+             </H1user1>
+             <Puser>
+               [Type here]
+             </Puser>
+          </GInfocard0>
+        </CardGroup1>
+      </CardContainer>
+      <PCardCont>
+        <Pcard>
+          <PcardIconcont>
+             <Numbers>
+                1
+             </Numbers>
+          </PcardIconcont>
+          <PpH1>
+            Pain Point
+          </PpH1>
+          <PpP>
+           <parag>
+              Write one to two sentences reflecting on the pain point listed above and how it will guide designs moving forward
+           </parag>
+           </PpP>
+        </Pcard>
+        <Pcard>
+          <PcardIconcont>
+             <Numbers>
+                1
+             </Numbers>
+          </PcardIconcont>
+          <PpH1>
+            Pain Point
+          </PpH1>
+          <PpP>
+           <parag>
+              Write one to two sentences reflecting on the pain point listed above and how it will guide designs moving forward
+           </parag>
+           </PpP>
+        </Pcard>
+        <Pcard>
+          <PcardIconcont>
+             <Numbers>
+                1
+             </Numbers>
+          </PcardIconcont>
+          <PpH1>
+            Pain Point
+          </PpH1>
+          <PpP>
+           <parag>
+              Write one to two sentences reflecting on the pain point listed above and how it will guide designs moving forward
+           </parag>
+           </PpP>
+        </Pcard>
+      </PCardCont>
     </MacbookPro1441>
   </ContentBox>
 );
