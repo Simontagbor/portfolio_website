@@ -104,39 +104,35 @@ export const H1 = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-  display: flex;
-
-  flex-direction: column;
   align-items: flex-start;
   padding: 3px;
   width: 90%;
   position: relative;
   height: auto;
   margin-left: 70px;
-  /*auto layout */
   flex: none;
-  order: 1;
-  align-self: stretch;
   flex-grow: 0;
   margin: 25px 0px;
+  color: black;
+  line-height: 28px;
+  text-align: justify;
 
   @media ${(props) => props.theme.breakpoints.lg} {
     font-size: 15px;
-    line-height: 166.68%;
     letter-spacing: 0.02em;
-    left: 3px;
+    /* left: 3px; */
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 22px;
     letter-spacing: 0.02em;
     width: 100%;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 13px;
-    line-height: 10px;
+    line-height: 22px;
     letter-spacing: 0.02em;
     overflow-wrap: anywhere;
     width: 100%;
