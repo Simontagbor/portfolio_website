@@ -72,9 +72,9 @@ export const ImgContainer = styled.img`
 `;
 
 export const TextBoxH1 = styled.div`
-  font-size: 30px;
-  font-weight: 900;
-  letter-spacing: 3.5px;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 2px;
   text-align: center;
   justify-content: center;
 
@@ -351,7 +351,7 @@ export const ProjectOverviewlg = styled.span`
   line-height: 100%;
   color: black;
   display: inline;
-  font-family: Open Sans;
+
   font-weight: 400;
   margin-left: 0.66%;
   margin-top: 2.28px;
@@ -524,7 +524,7 @@ export const Heading = styled.span`
   line-height: 100%;
   color: rgba(35.52, 134.53, 250.75, 1);
   display: inline;
-  font-family: Work Sans;
+
   font-weight: 400;
 
   &::first-line {
@@ -738,7 +738,6 @@ export const H1_R = styled.span`
   margin-left: 0.9%;
   margin-top: 24.73px;
   display: inline;
-  font-family: Work Sans;
   font-weight: 400;
 
   &::first-line {
@@ -768,7 +767,6 @@ export const Quote = styled.span`
   text-align: center;
   margin-top: 1.33px;
   display: inline;
-  font-family: Work Sans;
 
   &::first-line {
     line-height: 1;
@@ -880,7 +878,6 @@ export const H1user1 = styled.span`
   font-weight: 500;
   margin-top: -0.96px;
   display: inline;
-  font-family: Work Sans;
 
   &::first-line {
     line-height: 1;
@@ -1000,7 +997,6 @@ export const Numbers = styled.span`
   text-align: center;
   margin-top: 8.66px;
   display: inline;
-  font-family: Work Sans;
   margin-left: -5.13%;
 
   &::first-line {

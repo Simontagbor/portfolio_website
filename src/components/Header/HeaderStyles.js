@@ -107,13 +107,15 @@ export const Main_menu = styled(Logo_wrapper)`
 // New Styled Components for header
 export const NavHeader = styled.div`
   height: 51px;
-  background: aliceblue;
-  box-shadow: 0px 1px 4px rgb(0 0 0 / 32%);
-  font-family: Work Sans;
+  background: white;
+  box-shadow: 0px 1px 4px rgb(0 0 0 / 17%);
   font-style: normal;
   font-weight: normal;
   font-size: calc(1rem + 0.5vw);
   line-height: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-content: center;
   flex-wrap: nowrap;

@@ -73,7 +73,6 @@ export const TextContainer = styled.div`
 `;
 
 export const H1 = styled.h1`
-  font-family: Work Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -116,6 +115,7 @@ export const Paragraph = styled.p`
   color: black;
   line-height: 28px;
   text-align: justify;
+  font-size: 19px;
 
   @media ${(props) => props.theme.breakpoints.lg} {
     font-size: 15px;
@@ -144,21 +144,17 @@ export const Paragraph = styled.p`
 
 export const H2 = styled.h2`
   position: static;
-  left: 0.33%;
-  right: 0.33%;
-  /*top: 71.43%;*/
-  /*bottom: 14.29%;*/
-  font-family: Work Sans;
   font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
+  font-weight: 00;
+  font-size: 24px;
   line-height: 26px;
-  text-align: center;
   letter-spacing: 0.05em;
   color: black;
-
-  /* Inside auto layout */
-
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 25px 0px;
   flex: none;
   order: 2;
   align-self: stretch;
