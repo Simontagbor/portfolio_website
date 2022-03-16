@@ -393,9 +393,19 @@ export const InfocardGroup = styled.div`
   width: 100%;
   height: auto;
   display: flex;
-  /* margin: 2.03%; */
-  /* margin-top: 48px; */
-  /* flex-wrap: wrap; */
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: flex;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    height: 824px;
+    margin-top: 37px;
+  }
 `;
 export const Infocardcontainer = styled.div`
   width: 100%;
@@ -403,22 +413,17 @@ export const Infocardcontainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* margin: 2.03%; */
-  /* margin-top: 48px; */
-  /* flex-wrap: wrap; */
   align-items: center;
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
-    height: 197px;
-    flex-direction: row;
+    height: 393px;
+    flex-direction: column;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 73.33%;
-    height: 394px;
-    margin-left: 13.33%;
-    margin-top: 38px;
+    height: 397px;
     flex-direction: column;
   }
 `;
@@ -433,14 +438,14 @@ export const Infocard = styled.div`
   justify-content: space-between;
   margin: 21px;
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 48.89%;
-    height: 172px;
+    width: 92.89%;
+    height: 189px;
     border-radius: 12px 12px 12px 12px;
     margin: 0px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    height: 172px;
+    height: 182px;
     border-radius: 12px 12px 12px 12px;
   }
 `;
@@ -950,14 +955,15 @@ export const PCardCont = styled.div`
 `;
 
 export const Pcard = styled.div`
-  width: 18.34%;
+  width: 22.34%;
   height: 285px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 12px 12px 12px 12px;
   background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+  justify-content: center;
   @media ${(props) => props.theme.breakpoints.md} {
     width: 48%;
     height: 238px;
@@ -1036,7 +1042,7 @@ export const PpH1 = styled.span`
 `;
 
 export const PpP = styled.div`
-  width: 158.46px;
+  width: 173.46px;
   height: 156.7px;
   border-radius: 12px 12px 12px 12px;
   margin-top: 10.7px;
