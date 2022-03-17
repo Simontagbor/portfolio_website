@@ -5,7 +5,21 @@ import {
   MockImageC,
   MockupFlex,
   TextContainer,
-  Paragraph
+  Paragraph,
+  MyContainer,
+  MyContainerOk,
+  MyContTextDiv,
+  MycontImgDiv,
+  MycontImgcenter,
+  MycontImg,
+  Row,
+  Rowmgt8,
+  Col,
+  LeftVertical,
+  ColpImg,
+  MyContImgBig,
+  RowNomgbt,
+  RowCentred
 } from "./chatbotStyles";
 import { Container_wrapper } from "../Projects/ProjectsStyles";
 import {
@@ -309,6 +323,71 @@ const ChatbotCase = () => (
         </Pcard>
       </PCardCont>
     </MacbookPro1441>
+    <MyContainer>
+      <MyContainerOk>
+        <MyContTextDiv>
+          <H2>Ibidi bob but</H2>
+          <Paragraph>
+            Three of the busiest bus stops on campus were chosen to be our first
+            research spot. There, the team approached students waiting for buses
+            for a quick survey.
+          </Paragraph>
+        </MyContTextDiv>
+        <MycontImgDiv>
+          <MycontImgcenter>
+            <MycontImg src="https://cdn.pixabay.com/photo/2016/11/19/22/52/coding-1841550_960_720.jpg" />
+          </MycontImgcenter>
+        </MycontImgDiv>
+      </MyContainerOk>
+      <Rowmgt8>
+        <Col>
+          <H2>The Problem Space</H2>
+          <Paragraph>
+            Realizing that "public area" was too broad of a problem space, I
+            proposed to choose on-campus bus stops to be our location of
+            interest. We then developed three primary research questions
+          </Paragraph>
+          <div>
+            <LeftVertical>
+              What are students' current behaviors and attitudes towards social
+              interaction at on-campus bus stops?
+            </LeftVertical>
+            <LeftVertical>
+              For students waiting for buses, is there a barrier to social
+              interaction? If yes, what constitutes it?
+            </LeftVertical>
+          </div>
+        </Col>
+      </Rowmgt8>
+      <Rowmgt8>
+        <Col>
+          <H2>The Problem Space</H2>
+          <Paragraph>
+            Realizing that "public area" was too broad of a problem space, I
+            proposed to choose on-campus bus stops to be our location of
+            interest. We then developed three primary research questions
+          </Paragraph>
+          <ColpImg>
+            <MyContImgBig src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_960_720.jpg" />
+          </ColpImg>
+        </Col>
+      </Rowmgt8>
+      <RowNomgbt>
+        <Col>
+          <Paragraph>
+            Realizing that "public area" was too broad of a problem space, I
+          </Paragraph>
+        </Col>
+      </RowNomgbt>
+      <RowCentred>
+        <H2> - Prototype - </H2>
+      </RowCentred>
+      <Paragraph>
+        Realizing that "public area" was too broad of a problem space, I
+        proposed to choose on-campus bus stops to be our location of interest.
+        We then developed three primary research questions
+      </Paragraph>
+    </MyContainer>
   </ContentBox>
 );
 export default ChatbotCase;

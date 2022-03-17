@@ -1,6 +1,124 @@
 import styled from "styled-components";
 
 // MAIN CONTENTS
+// project page Container
+export const MyContainer = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    width: 55%;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 65%;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 80%;
+  }
+`;
+
+//  new reusable rows
+export const Row = styled(MyContainer)`
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+`;
+
+export const RowNomgbt = styled(Row)`
+  margin-bottom: 0 !important;
+`;
+
+export const Rowmgt8 = styled(Row)`
+  margin-top: 8rem;
+`;
+export const Col = styled(Row)`
+  float: left;
+  box-sizing: border-box;
+  padding: 0 0.75rem;
+  min-height: 1px;
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+`;
+
+export const ColpImg = styled.p`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+`;
+export const MyContainerBig = styled(MyContainer)`
+  width: 100%;
+`;
+export const MyContainerOk = styled(MyContainer)`
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 8rem;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+`;
+
+export const MyContTextDiv = styled.div`
+  margin-left: auto;
+  left: auto;
+  right: auto;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 0.75rem;
+  min-height: 1px;
+`;
+
+export const MycontImgDiv = styled(MyContTextDiv)`
+  width: 100%;
+`;
+
+export const MycontImgcenter = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+`;
+
+export const MycontImg = styled.img`
+  width: 90%;
+  max-width: 500px;
+  border: 0;
+`;
+
+export const MyContImgBig = styled(MycontImg)`
+  width: 100%;
+  max-width: 2000px;
+`;
+
+// Decorators
+export const LeftVertical = styled.p`
+  border-left: 0.4rem solid #ec8300;
+  padding-left: 1.6rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #351700;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+`;
+
+export const RowCentred = styled(Rowmgt8)`
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 export const ContentBox = styled.section`
   display: flex;
   margin-top: 50px;
