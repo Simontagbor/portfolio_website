@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const Mockup_flex1 = styled.div`
   display: flex;
   flex-direction: row;
