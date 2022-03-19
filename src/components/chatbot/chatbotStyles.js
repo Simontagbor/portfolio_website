@@ -24,7 +24,24 @@ export const Row = styled(MyContainer)`
   margin-right: auto;
   margin-bottom: 20px;
 `;
+export const NewContentBox = styled.section`
+  /* width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
 
+  @media ${(props) => props.theme.breakpoints.lg} {
+    width: 55%;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 65%;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 80%;
+  } */
+`;
+export const RowTop = styled(Row)`
+  margin-top: 128px;
+`;
 export const RowNomgbt = styled(Row)`
   margin-bottom: 0 !important;
 `;
